@@ -1,7 +1,7 @@
 package day1;
 
 public class CallTest {
-//ÀÚ¹Ù¿¡¼­ reference type : ¹è¿­, class, interface
+//ìë°”ì—ì„œ reference type : ë°°ì—´, class, interface
 	public static void main(String[] args) {
 		int x=3, y=4;
 		int[] a={3}, b={4};
@@ -12,13 +12,13 @@ public class CallTest {
 		System.out.println(a[0] + " " + b[0]);
 	}
 	
-	public void changeVal(int a, int b){//ÆÄ¶ó¹ÌÅÍ Å¸ÀÔÀÌ primitive data typeÀÌ¸é call by value
+	public void changeVal(int a, int b){//íŒŒë¼ë¯¸í„° íƒ€ì…ì´ primitive data typeì´ë©´ call by value
 		int temp = a;
 		a = b;
 		b = temp;
 	}
 	
-	public void changeRef(int[] a, int[] b){//ÆÄ¶ó¹ÌÅÍ Å¸ÀÔÀÌ reference data typeÀÌ¸é call by reference ¹æ½ÄÀ¸·Î ¼öÇà
+	public void changeRef(int[] a, int[] b){//íŒŒë¼ë¯¸í„° íƒ€ì…ì´ reference data typeì´ë©´ call by reference ë°©ì‹ìœ¼ë¡œ ìˆ˜í–‰
 		int temp = a[0];
 		a[0] = b[0];
 		b[0] = temp;

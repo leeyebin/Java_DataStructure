@@ -4,7 +4,7 @@ public class OperatePoly {
 	@SuppressWarnings("null")
 	public Polynomial addPoly(Polynomial A, Polynomial B){
 		Polynomial C = null;
-		//´ÙÇ×½Ä C´Â A¿Í B ´ÙÇ×½ÄÀÇ Áö¼ö¸¦ ºñ±³ÇØ¼­ Å«°ªÀÌ ´ÙÇ×½Ä CÀÇ Áö¼ö
+		//ë‹¤í•­ì‹ CëŠ” Aì™€ B ë‹¤í•­ì‹ì˜ ì§€ìˆ˜ë¥¼ ë¹„êµí•´ì„œ í°ê°’ì´ ë‹¤í•­ì‹ Cì˜ ì§€ìˆ˜
 		int[] c = A.getCoef();
 		int[] d = B.getCoef();
 		int[] e;

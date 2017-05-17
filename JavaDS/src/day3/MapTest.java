@@ -6,7 +6,7 @@ import java.util.TreeMap;
 public class MapTest {
 
 	public static void main(String[] args) {
-		String[] cars = new String[]{"¾Æ¿ìµğ", "º¥Ã÷", "BMW", "¸¶ÀÌ¹ÙÈå", "Æ÷¸£½¦"};
+		String[] cars = new String[]{"ì•„ìš°ë””", "ë²¤ì¸ ", "BMW", "ë§ˆì´ë°”í", "í¬ë¥´ì‰"};
 		TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 		
 		for(int i=0; i<cars.length; i++){

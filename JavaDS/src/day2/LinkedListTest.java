@@ -3,14 +3,14 @@ package day2;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-//java.util.List ÀÎÅÍÆäÀÌ½º - ArrayList, Vector, LinkedList, Queue, Stack
-//¿ä¼Ò°¡ ÀúÀåµÈ ¼ø¼­¸¦ º¸Àå, Áßº¹ °´Ã¼ ÀúÀå Çã¿ë
+//java.util.List ì¸í„°í˜ì´ìŠ¤ - ArrayList, Vector, LinkedList, Queue, Stack
+//ìš”ì†Œê°€ ì €ì¥ëœ ìˆœì„œë¥¼ ë³´ì¥, ì¤‘ë³µ ê°ì²´ ì €ì¥ í—ˆìš©
 
 public class LinkedListTest {
 
 	public static void main(String[] args) {
 		LinkedList<String> list = new LinkedList();
-		String[] cars = new String[]{"¾Æ¿ìµğ", "º¥Ã÷", "BMW", "¸¶ÀÌ¹ÙÈå", "Æ÷¸£½¦"};
+		String[] cars = new String[]{"ì•„ìš°ë””", "ë²¤ì¸ ", "BMW", "ë§ˆì´ë°”í", "í¬ë¥´ì‰"};
 		for(String s : cars){
 			list.add(s);
 		}

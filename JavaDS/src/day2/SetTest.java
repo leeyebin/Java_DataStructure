@@ -7,7 +7,7 @@ import java.util.TreeSet;
 public class SetTest {
 
 	public static void main(String[] args) {
-		String[] cars = new String[] { "¾Æ¿ìµğ", "º¥Ã÷", "BMW", "¸¶ÀÌ¹ÙÈå", "Æ÷¸£½¦" };
+		String[] cars = new String[] { "ì•„ìš°ë””", "ë²¤ì¸ ", "BMW", "ë§ˆì´ë°”í", "í¬ë¥´ì‰" };
 		HashSet<String> hset = new HashSet<String>();
 		TreeSet<String> tset = new TreeSet<String>();
 		for (String s : cars) {

@@ -7,7 +7,7 @@ public class PairTest {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("ÀÔ·Â : ");
+		System.out.print("ìž…ë ¥ : ");
 		Stack<Character> stack = new Stack();
 		String sentence = scanner.next();
 		for(int i=0; i<sentence.length(); i++){

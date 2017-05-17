@@ -6,13 +6,13 @@ public class StackTest {
 
 	public static void main(String[] args) {
 		Stack<String> list = new Stack();
-		String[] cars = new String[]{"¾Æ¿ìµğ", "º¥Ã÷", "BMW", "¸¶ÀÌ¹ÙÈå", "Æ÷¸£½¦"};
+		String[] cars = new String[]{"ì•„ìš°ë””", "ë²¤ì¸ ", "BMW", "ë§ˆì´ë°”í", "í¬ë¥´ì‰"};
 		for(String s : cars){
 			list.push(s);
 		}
 		
 		while(!list.isEmpty()){
-			System.out.println(list.pop() + ", ³²Àº ¿ä¼Ò " + list.size());
+			System.out.println(list.pop() + ", ë‚¨ì€ ìš”ì†Œ " + list.size());
 		}
 	}
 
