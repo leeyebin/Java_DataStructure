@@ -3,7 +3,6 @@ package day3;
 public class QuickSort {
 
 	public static void main(String[] args) {
-		//수정할 것
 		int[] numbers = {69,10,30,2,16,8,31,22};
 		
 		QuickSort Quick = new QuickSort();
@@ -23,26 +22,26 @@ public class QuickSort {
 		int temp = -1;
 		
 		do{
-			while(numbers[l]<numbers[pivot]&&l<r){
-				l++;
+			while(numbers[left]<numbers[pivot]&&left<right){
+				left++;
 			}
-			while(numbers[r]<numbers[pivot]&&l<r){
-				r++;
+			while(numbers[right]>=numbers[pivot]&&left<right){
+				right--;
 			}
 			
-			if(l<r){
-				temp = numbers[l];
-				numbers[l] = numbers[r];
-				numbers[r] = temp;
+			if(left<right){
+				temp = numbers[left];
+				numbers[left] = numbers[right];
+				numbers[right] = temp;
 			}
-		}while(l<r);
-		temp = numbers[pivot];
-		numbers[pivot] = numbers[r];
-		numbers[r] = temp;
+		}while(left<right);
 		
-		if(l < right) sort(numbers, l, right);
-        if(r > left) sort(numbers, left, r);
-
+		temp = numbers[pivot];
+		numbers[pivot] = numbers[right];
+		numbers[right] = temp;
+		
+		if(l < right) sort(numbers, l, right-1);
+        if(r > left) sort(numbers, left+1, r);
 	}
 
 }
