@@ -8,37 +8,56 @@ public class PairTest {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("입력 : ");
-		Stack<Character> stack = new Stack();
 		String sentence = scanner.next();
+		
+		System.out.println(check(sentence));
+
+	}
+	
+	public static boolean check(String sentence){
+		Stack<Character> stack = new Stack();
+		
 		for(int i=0; i<sentence.length(); i++){
 			switch(sentence.charAt(i)){
 			case '{':
 			case '(':
 			case '[': stack.push(sentence.charAt(i)); break;
 			case '}':
-				if(stack.peek()=='{'){
-					stack.pop();
+				if(!stack.isEmpty()){
+					if(stack.peek()=='{'){
+						stack.pop();
+					}else{
+						return false;
+					}
 				}
 				break;
 			case ')':
-				if(stack.peek()=='('){
-					stack.pop();
+				if(!stack.isEmpty()){
+					if(stack.peek()=='('){
+						stack.pop();
+					}else{
+						return false;
+					}
 				}
 				break;
 			case ']':
-				if(stack.peek()=='['){
-					stack.pop();
+				if(!stack.isEmpty()){
+					if(stack.peek()=='['){
+						stack.pop();
+					}else{
+						return false;
+					}
 				}
 				break;
 			}
 		}
 		
-		if(stack.empty()){
-			System.out.println("true");
+		if(stack.isEmpty()){
+			return true;
 		}else{
-			System.out.println("false");
+			return false;
 		}
-
+		
 	}
 
 }
